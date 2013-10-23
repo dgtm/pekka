@@ -45,6 +45,7 @@ rule
 		INDENT {}
 	Dedent:
 		DEDENT {}
+		
 ---- header
   require_relative './lexer.rb'
   require_relative './ast.rb'

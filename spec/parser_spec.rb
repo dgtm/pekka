@@ -10,7 +10,6 @@ class Hatti:
   def awesome:
     "Awesome"
 EOF
-	binding.pry
     	parsed = Parser.new.parse(code)
     	parsed.should == Nodes.new([ClassNode.new("Hatti",Nodes.new([DefNode.new("awesome")]))])
     end
