@@ -34,3 +34,4 @@
 #  where our constants (ie. classes) will be stored.
 
 # The object model, built-in classes, and memory management system are part of the runtime.
+# The runtime system acts as a kind of operating system for the Objective-C language; it’s what makes the language work
