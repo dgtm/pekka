@@ -12,4 +12,8 @@ class Peklass < Peking
 	def initialize
 		super(Pekklass)
 	end
+
+	def new
+		
+	end
 end

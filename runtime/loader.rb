@@ -7,5 +7,13 @@ peklass.klass = peklass # SInce Class.class.class.class is a class
 
 # Lets create an object of type class peklass now, not Peklass. peklass is like an abstraction for Ruby Class
 
-object = Peklass.new # Like an abstraction for an object of klass peklass
+object = Peklass.new # Like an abstraction for an Object
 object.klass = peklass
+
+# So, now you can do like Object
+# and Object.class.class.class
+
+Runtime = EvaluationContext.new(object.new)
+
+Runtime["Class"] = peklass
+Runtime["Object"] = object
