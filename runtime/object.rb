@@ -10,10 +10,10 @@ end
 
 class Peklass < Peking
 	def initialize
-		super(Pekklass)
+		super(Peklass)
 	end
 
 	def new
-		
+		Peking.new(self)
 	end
 end
