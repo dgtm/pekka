@@ -1,4 +1,4 @@
-
+require 'pry'
 peklass = Peklass.new # Like an abstraction for Class
 peklass.klass = peklass # SInce Class.class.class.class is a class
 
@@ -12,8 +12,26 @@ object.klass = peklass
 
 # So, now you can do like Object
 # and Object.class.class.class
-
 Runtime = EvaluationContext.new(object.new)
 
 Runtime["Class"] = peklass
 Runtime["Object"] = object
+
+
+# Inside Peklass
+# def new
+###Peking.new(self)
+# end
+
+######
+#Peking.new(self)
+
+## object.new
+## object.klass is out peklass
+## object.new's klass should be object
+## new is just a method, so self is just "object"
+## When Peking.new(self) is called,
+## it returns a new Peking object
+## whose @klass is object,
+## which means an instance of Peking
+## whose klass is object
